@@ -1,8 +1,18 @@
 <html>
 <head>
-<title>  </title>
-<link rel="stylesheet" type="text/css" href="mapstyle.css"></link>
-<script src="map.js"></script>
+<title> map demo </title>
 </head>
 <body>
+  <body style="background-color:powderblue;">
 <h1> india map </h1>
+<embed type="image/png" src="indiamap.png" width="300" height="500">
+    $(document).ready(function(){
+    $('[data-toggle="popover"]').popover({
+        trigger : 'hover',
+        placement : 'top',
+    });   
+});
+  <map name="indiamap">
+    <area shape="circle" coords="257,472,24" alt="tamil" data-toggle="popover" data-content="chennai">
+  </body>
+  </html>
